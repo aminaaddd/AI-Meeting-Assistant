@@ -1,0 +1,26 @@
+[project]
+name = "ai-agent"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "aminaaddd",email = "amina.addi@yahoo.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi (>=0.118.0,<0.119.0)",
+    "typer (>=0.19.2,<0.20.0)",
+    "redis (>=6.4.0,<7.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "uvicorn[standard] (>=0.37.0,<0.38.0)",
+    "pydantic (>=2.11.9,<3.0.0)",
+    "asyncio (>=4.0.0,<5.0.0)",
+    "aioredis (>=2.0.1,<3.0.0)",
+    "mistralai (>=1.9.11,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

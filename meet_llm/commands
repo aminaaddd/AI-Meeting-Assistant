@@ -1,0 +1,23 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+then execute
+
+send meeting link:
+\google_meet_test> python main.py
+
+run the api:
+\meet_llm> uvicorn server:app --reload --host 127.0.0.1 --port 8000
+
+interface:
+\frontend> npm run dev
+
+""" 
+- choose emails, to send inivtation,
+- choose actual language and the target
+- participants problem
+- redis memory
+- summary of all able to downoald it 
+- chatbot under participants and who is speaking
+- dont show all transations(it is too much to scroll down), we have a memory
+- buttom to click in to say meeting off
+- home page containing link , emails , ..
+""" 

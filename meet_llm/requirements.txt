@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+redis
+python-dotenv
+mistralai
+faster-whisper
+sounddevice
+soundfile
+numpy
+reportlab

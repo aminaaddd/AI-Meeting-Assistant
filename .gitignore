@@ -1,0 +1,35 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Fichiers d'environnement / secrets
+*.env
+.env
+token.json
+client_secret.json
+*.json.secret
+
+
+# but keep this specific one tracked
+!meet_llm/.env
+
+# === Node / frontend ===
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers temporaires / données locales
+current_meeting.json
+*.wav
+*.log
+
+# OS / éditeur
+.DS_Store
+Thumbs.db
+.vscode/
