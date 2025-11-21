@@ -19,7 +19,7 @@ export default function MeetingInfoCard() {
     <div className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-5 shadow-xl shadow-black/50 text-sm space-y-4">
       <div>
         <div className="text-neutral-400 text-[10px] uppercase tracking-wide mb-1">
-          Lien Meet
+          Link Meeting
         </div>
         {info.meet_link ? (
           <a
@@ -32,7 +32,7 @@ export default function MeetingInfoCard() {
           </a>
         ) : (
           <div className="text-neutral-500 text-xs">
-            Pas de réunion active
+            No link detected yet.
           </div>
         )}
       </div>
@@ -40,7 +40,7 @@ export default function MeetingInfoCard() {
       <div className="grid grid-cols-2 gap-4 text-xs">
         <div>
           <div className="text-neutral-500 uppercase tracking-wide mb-1 text-[10px]">
-            Début
+            Start
           </div>
           <div className="text-neutral-200">
             {info.start || "—"}
@@ -48,7 +48,7 @@ export default function MeetingInfoCard() {
         </div>
         <div>
           <div className="text-neutral-500 uppercase tracking-wide mb-1 text-[10px]">
-            Fin
+            End
           </div>
           <div className="text-neutral-200">
             {info.end || "—"}
@@ -58,7 +58,7 @@ export default function MeetingInfoCard() {
 
       <div>
         <div className="text-neutral-500 uppercase tracking-wide mb-1 text-[10px]">
-          Invités
+          Invited Participants
         </div>
         {info.participants?.length ? (
           <div className="flex flex-wrap gap-2">
@@ -73,7 +73,7 @@ export default function MeetingInfoCard() {
           </div>
         ) : (
           <div className="text-neutral-500 text-xs">
-            Aucun invité
+            No participants.
           </div>
         )}
       </div>

@@ -7,17 +7,14 @@ export default function DownloadPdfButton({ className = "" }) {
         return;
       }
 
-      // Convert the response to a Blob
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);
 
-      // Create a temporary <a> element to trigger download
       const a = document.createElement("a");
       a.href = url;
       a.download = "meeting_summary.pdf";
       a.click();
 
-      // Clean up
       URL.revokeObjectURL(url);
     } catch (err) {
       console.error("Error downloading PDF:", err);
@@ -28,9 +25,9 @@ export default function DownloadPdfButton({ className = "" }) {
   return (
     <button
       onClick={handleDownload}
-      className={`rounded-xl px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm ${className}`}
+      className={`inline-flex items-center gap-2 rounded-xl px-4 py-2 text-xs font-semibold text-white bg-gradient-to-r from-emerald-600 via-emerald-500 to-sky-500 shadow-[0_0_18px_-4px_rgba(16,185,129,0.9)] hover:shadow-[0_0_25px_-2px_rgba(56,189,248,1)] transition ${className}`}
     >
-      ⬇ Download PDF
+      Download PDF
     </button>
   );
 }
