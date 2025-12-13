@@ -187,13 +187,6 @@ http://localhost:5173
 
 ---
 
-## Authors
-
-**Amina Addi**  
-**Mahek Makwana**  
-
----
-
 ## License
 
 MIT License 
